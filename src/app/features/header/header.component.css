@@ -16,14 +16,21 @@
 .header-name {
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 15px;
   color: #FFFFFF;
   cursor: pointer;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   line-height: 33px;
   font-weight: 600;
 } .header-name:hover {
   color: #F3D4CF;
+  transition: all 0.3s ease-in;
+  transition-delay: 0.1s;
+  transform: scale(1.2);
+} .header-name:hover:after {
+  color: #F3D4CF;
+  transition: all 0.3s ease-out;
+  transition-delay: 0.1s;
 }
 
 .border-bottom {
