@@ -15,13 +15,6 @@
   justify-content: center;
 }
 
-.social-media {
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .social-media-title {
   display: flex;
   align-items: center;
@@ -34,10 +27,11 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .footer-itens {
+  padding: 10px;
   background: none;
   color: #7B7B7B;
   border: none;
