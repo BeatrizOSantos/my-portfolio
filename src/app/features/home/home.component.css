@@ -83,5 +83,4 @@
   transition-delay: 0.1s;
   -webkit-animation: avatar 1s alternate infinite ease-in-out;
   animation: avatar 1s alternate infinite ease-in-out;
-  opacity: 30%;
 }
