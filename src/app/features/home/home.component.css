@@ -1,74 +1,87 @@
+@-webkit-keyframes avatar {
+  from {-webkit-transform: rotate(10deg)}
+  to   {-webkit-transform: rotate(-10deg)}
+}
+
+@keyframes avatar {
+  from {transform: rotate(10deg)}
+  to   {transform: rotate(-10deg)}
+}
+
 .main {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: #FFFFFF;
 }
 
 .box {
+  width: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .box-one {
-  padding-top: 50px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
   padding-bottom: 7px;
 }
 
 .intro-one {
-  font-size: 25px;
+  font-size: 20px;
   padding-right: 7px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
 
 .intro-two {
   color: #F3D4CF;
-  font-size: 25px;
+  font-size: 20px;
   border-bottom: solid 1.5px;
-  /* text-shadow: 1px 1px 1px #DA7C87, 2px 2px 1px #DA7C87; */
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
+}
+
+.intro-two:hover {
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.intro-two:hover:after {
+  content: url(../../../assets/hello.svg);
+  padding-left: 7px;
 }
 
 .title-one {
   display: flex;
   justify-content: center;
-  font-size: 33px;
-  padding-bottom: 20px;
-  font-family: 'Inter';
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
-.description-one {
-  display: flex;
-  justify-content: center;
-  font-size: 17px;
-  font-family: 'Inter';
-  font-weight: 400;
-}
-
-.box-two {
-  padding: 30px;
-  display: flex;
-  justify-content: center;
+.click-me {
+  background: none;
+  border-radius: 100px;
+  border: hidden;
+} .click-me:hover {
+  padding-top: 40px;
+  transform: scale(1.4);
 }
 
 .avatar {
-  width: 13%;
+  width: 190px;
+  cursor: pointer;
 }
 
-.box-three {
-  display: flex;
-  justify-content: center;
-}
-
-.description-two {
-  padding-top: 15px;
-  width: 50%;
-  text-align: center;
+.avatar:hover {
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  -webkit-animation: avatar 1s alternate infinite ease-in-out;
+  animation: avatar 1s alternate infinite ease-in-out;
+  opacity: 30%;
 }
